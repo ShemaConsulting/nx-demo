@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -36,5 +39,13 @@
       }
     }
   ],
-  "nxCloudAccessToken": "MDliYzBjMzQtZGFhZC00M2YxLWJiMjMtMTQ1MTY0MTc3ODEzfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MDliYzBjMzQtZGFhZC00M2YxLWJiMjMtMTQ1MTY0MTc3ODEzfHJlYWQtd3JpdGU=",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+      "options": {
+        "accessToken": "OTAxMTk4YTEtMmEyMy00YjM3LWE4MGUtYzMyOWUwZWMwZTBhfHJlYWQtd3JpdGU="
+      }
+    }
+  }
 }
